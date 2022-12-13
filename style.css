@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh', sans-serif;
+}
+.main{
+    /* z-index: -1; */
+    position: relative;
+}
+header{
+    background: transparent;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+    /* border-bottom: 1px solid rgb(136, 131, 131); */
+}
+.hline {
+    width: 77%;
+    margin: -10px auto;
+    outline: 0;
+    /* border: none; */
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    gap: 2.5rem;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    list-style-type: none;
+}
+ul > li > a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 30px 20px;
+    border: 3px solid transparent;
+    /* border-top: 4px solid transparent; */
+    color: hsl(219, 9%, 45%);
+}
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.nav2 > .carto > img{
+    width: 100%;
+}
+.nav2 > .avatar > img{
+    width: 100%;
+}
+ .avatar{
+    width: 40%;
+}
+.carto{
+    width: 25%;
+    margin: 15px;
+    display: relative;
+}
+.logo > img{
+    width: 100%;
+}
+.logo{
+    width: 40%;
+    margin: auto;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_cont{
+    display: flex;
+    flex-direction: column;
+}
+.image_cont, .details_cont{
+    width: 50%;
+    margin: 35px auto;
+}
+.image-container{
+    width: 50%;
+    margin: auto;
+}
+.image-container > img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.image_grid{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 10px auto;
+}
+.image_grid > .image_lum{
+    width: 20%;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+.image_lum > img{
+    /* width: 100%; */
+    /* border-radius: 0.5rem; */
+    
+}
+.f_text{
+    font-size: 12px;
+    color: hsl(26, 100%, 55%);
+    margin: -70px auto 30px auto;
+}
+.main_h{
+    font-size: 25px;
+    width: 40%;
+    font-weight: 700;
+}
+.item_desc{
+    margin: 20px 0px;
+    width: 74%;
+    color: hsl(219, 9%, 45%);
+}
+.amount{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.amount > .amt_2{
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+}
+.cancel{
+    margin: 20px 0px;
+    text-decoration: line-through;
+    color: hsl(220, 14%, 75%);
+}
+.but_cont{
+    display: flex;
+    gap: 2rem;
+}
+.but1{
+    display: flex;
+    background-color:  hsl(223, 64%, 98%);
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-right: 30px; */
+    padding: 11px;
+    border-radius: 0.5rem;
+}
+.but1 > span{
+    /* width: 30%; */
+    /* margin: auto; */
+    /* margin: 0px; */
+}
+.but1 > .menusi{
+    /* margin: 17px auto auto 15px; */
+    padding-bottom: 5px;
+    /* Used to obstruct highlighting of text */
+    user-select: none; 
+   
+}
+.but1 > .menusi:hover{
+    cursor: pointer;
+}
+.plusi > img{
+    user-select: none; 
+}
+.but1 > .plusi:hover{
+    cursor: pointer;
+}
+.but2{
+   
+}
+.kart{
+    width: 10%;
+    /* color: hsl(0, 0%, 100%); */
+}
+.but2 > button{
+    /* margin: 17px auto auto 15px; */
+    padding: 15px 40px;
+    border-radius: 0.5rem;
+    /* outline: none; */
+    border: 0;
+    background-color: hsl(26, 100%, 55%);
+    color: hsl(0, 0%, 100%);
+}
+.but2 > button:hover{
+    cursor: pointer;
+    box-shadow: 1px 30px 8px -10px hsl(25, 100%, 94%);
+    background-color: hsla(26, 100%, 55%, 0.717)
+    
+}
+button{
+    padding: 12px 70px;
+    margin: auto;
+    border-radius: 0.5rem;
+    /* outline: none; */
+    border: 0;
+    background-color: hsl(26, 100%, 55%);
+    color: hsl(0, 0%, 100%);
+}
+button:hover{
+    cursor: pointer;
+    /* box-shadow: 1px 30px 8px -10px hsl(25, 100%, 94%); */
+    background-color: hsla(26, 100%, 55%, 0.717)
+    
+}
+button:active{
+    background-color: hsla(26, 100%, 55%, 0.717); 
+}
+
+.image_lum:hover{
+    /* background-color: hsla(26, 100%, 55%, 0.717); */
+    opacity: 0.8;
+    cursor: pointer;
+}
+.item{
+    display: none;
+}
+.item.active{
+    display: block;
+}
+.image_lum.active{
+    border: 2px solid hsl(26, 100%, 55%);
+    opacity: 0.4;
+    /* border-radius: 0.5rem; */
+
+}
+ul > li > a:hover{
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+    cursor: pointer;   
+}
+.p_circle.active{
+    position: absolute;
+    right: 220px;
+    /* left: 0; */
+    bottom: 0;
+    top: 19px;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    width: 3%;
+    height: 4%;
+}
+.cart_card{
+    position: absolute;
+    right: 234px;
+    bottom: 0;
+    top: 19px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 30px 27px 5px hsl(220deg 14% 75%);
+    width: 20%;
+    height: 40%;
+    justify-content: space-around;
+    background-color: white;
+    display: none;
+    
+}
+.cart_card > hr{
+    width: 100%;
+}
+.cart_card > .cart_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 30px;
+}
+.cart_card > .cart_items > .two{
+    width: 20%;
+    border-radius: 0.3rem;
+}
+.cart_card > .cart_items > .cart_text{
+    display: flex;
+    flex-direction: column;
+}
+.cart_card > .cart_items > .cart_text > .cart_figure{
+    display: flex;
+    font-size: 12px;
+}
+h6{
+    margin: auto 32px;
+}
+.cart_title{
+    font-size: 10px;
+    color: hsl(220, 14%, 75%);
+}
+.carter:hover{
+    cursor: pointer;
+}
+.ruga{
+    /* display: none; */
+}
+.lightbox_container{
+    position: absolute;
+    background-color: hsla(0, 0%, 0%, 0.886);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: none;
+    
+}
+
+.light_box{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.itema > img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.itema{
+        display: none;
+}
+.itema.active{
+        width: 50%;
+        margin: auto;
+        display: block;
+}
+
+
+.light_box > .image_grid{
+        display: flex;
+        justify-content: space-around;
+        width: 22%;
+        margin: 10px auto;
+}
+.image_luma{
+        width: 20%;
+        margin: auto;
+        border: 2px solid transparent;
+        border-radius: 0.5rem;
+        opacity: 0.5;
+} 
+        
+
+.image_luma:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.image_luma.active{
+    border: 2px solid hsl(26, 100%, 55%);
+    
+    
+}
+
+.close{
+    position: absolute;
+    color: hsl(26, 100%, 55%);
+    font-size: 30px;
+    cursor: pointer;
+    right: 480px;
+    top: 30px;
+}
+.previous{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    left: 460px;
+    top: 225px;
+    width: 3%;
+    height: 5%;
+   
+}
+.previous > img{
+    width: 40%;
+    margin: 3px 10px;
+}
+.next{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    right: 460px;
+    top: 225px;
+    width: 3%;
+    height: 5%;
+}
+.next > img {
+    width: 40%;
+    margin: 4px 13px;
+}
