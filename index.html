@@ -7,15 +7,19 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>E-commerce product page</title>
 
  
 </head>
 <body>
+
   <div class="lightbox_container ruga">
+    <span class="close cursor">&times;</span>
     <div class="light_box">
-      <span class="close cursor">&times;</span>
+      
       <div class="image_cont">
+       
         <div class="image-container itema active">
           <img src="/images/image-product-1.jpg" alt="product1" class="products">
         </div>
@@ -27,6 +31,11 @@
         </div>
         <div class="image-container itema">
           <img src="/images/image-product-4.jpg" alt="product4" class="products">
+        </div>
+        <div class="btn-container">
+          <div class="previous" onclick="plusSlides(-1)"><img src="/images/icon-previous - Copy.svg" alt="previous"></div>
+        
+        <div class="next" onclick="plusSlides(1)"><img src="/images/icon-next.svg" alt="next"></div>
         </div>
       </div>
   
@@ -44,115 +53,130 @@
               <img src="/images/image-product-4-thumbnail.jpg" alt="product1" onclick="currentSlide(4)" class="image_luma">
           
       </div>
-        <a href="#" class="previous" onclick="plusSlides(-1)"><img src="/images/icon-previous - Copy.svg" alt="previous"></a>
-        <a href="#" class="next" onclick="plusSlides(1)"><img src="/images/icon-next.svg" alt="next"></a>
+      
+      
+      
+        
       
     </div>
   </div>
   
     <div class="main">
       <header>
-        <div class="nav1">
-          <div class="logo">
-            <img src="/images/logo.svg" alt="site_logo">
-          </div>
-         
-          <ul>
-            <li><a href="#">Collections</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="nav2">
-          <div class="carto">
-           <img src="/images/icon-cart 2.svg" alt="cart" class="carter">
-           <div class="p_circle"><span></span></div>
-           <div class="cart_card">
-            <h6>Cart</h6>
-            <hr>
-            <div class="cart_items">
-              <img src="/images/image-product-1-thumbnail.jpg" alt="image item" class="two">
-              <div class="cart_text">
-                <span class="cart_title">Fall Limited Edition Sneakers</span>
-                <div class="cart_figure">
-                  <span class="price">$125.00 x&nbsp;<span class="rate"></span></span>
-                  <span class="total_price"></span>
-                  <span class="real_price"></span>
-                </div>
-              </div>
-              <img src="/images/icon-delete.svg" alt="delete_image" class="three">
+        <div class="headings">
+          <i class="fa-solid fa-bars"></i>
+          <div class="nav1">
+            <div class="logo">
+              <img src="/images/logo.svg" alt="site_logo">
             </div>
-            <button>Checkout</button>
-           </div>
+           
+            <ul>
+              <div class="klose">
+                <span class="close cursor">&times;</span>
+              </div>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
           </div>
-          <div class="avatar">
-            <img src="/images/image-avatar.png" alt="avatar" class="avart">
+          <div class="nav2">
+            <div class="carto">
+             <img src="/images/icon-cart 2.svg" alt="cart" class="carter">
+             <div class="p_circle"><span></span></div>
+             <div class="cart_card">
+              <h6>Cart</h6>
+              <hr>
+              <div class="cart_items">
+                <img src="/images/image-product-1-thumbnail.jpg" alt="image item" class="two">
+                <div class="cart_text">
+                  <span class="cart_title">Fall Limited Edition Sneakers</span>
+                  <div class="cart_figure">
+                    <span class="price">$125.00 x&nbsp;<span class="rate"></span></span>
+                    <span class="total_price"></span>
+                    <span class="real_price"></span>
+                  </div>
+                </div>
+                <img src="/images/icon-delete.svg" alt="delete_image" class="three">
+              </div>
+              <button>Checkout</button>
+             </div>
+            </div>
+            <div class="avatar">
+              <img src="/images/image-avatar.png" alt="avatar" class="avart">
+            </div>
+            
           </div>
           
         </div>
+        <hr class="hline">
       </header>
-      <hr class="hline">
-      <div class="container">
-        <div class="image_cont">
-          <div class="image-container item items active">
-            <img src="/images/image-product-1.jpg" alt="product1" class="products">
-          </div>
-          <div class="image-container items item">
-            <img src="/images/image-product-2.jpg" alt="product2" class="products">
-          </div>
-          <div class="image-container items item">
-            <img src="/images/image-product-3.jpg" alt="product3" class="products">
-          </div>
-          <div class="image-container items item">
-            <img src="/images/image-product-4.jpg" alt="product4" class="products">
-          </div>
-  
-  
-          <div class="image_grid">
-            
-                <img src="/images/image-product-1-thumbnail.jpg" alt="product1" class="image_lum active">
-           
-            
-                <img src="/images/image-product-2-thumbnail.jpg" alt="product1" class="image_lum">
-           
-            
-                <img src="/images/image-product-3-thumbnail.jpg" alt="product1" class="image_lum">
-            
-            
-                <img src="/images/image-product-4-thumbnail.jpg" alt="product1" class="image_lum">
-            
-          </div>
-        </div>
-        <div class="details_cont">
-          <p class="f_text">
-            SNEAKER COMPANY
-          </p>
-          <h2 class="main_h">
-            Fall Limited Edition Sneakers
-          </h2>
-          <p class="item_desc">
-            These low-profile sneakers are your perfect casual wear companion. Featuring a 
-            durable rubber outer sole, they’ll withstand everything the weather can offer.
-          </p>
-          <div class="amount">
-            <h3 class="amt_1">$125.00</h3>
-            <h4 class="amt_2">50%</h4>
-          </div>
-          <h5 class="cancel">$250.00</h5>
-          <div class="but_cont">
-            <div class="but1">
-              <span class="menusi"><img src="/images/icon-minus.svg" alt="minus"></span>
-              <span class="fig"><b></b></span>
-              <span class="plusi"><img src="/images/icon-plus.svg" alt="plus" ></span>
+      
+        <div class="container">
+          <div class="image_cont">
+            <div class="image-container item items active">
+              <img src="/images/image-product-1.jpg" alt="product1" class="products">
             </div>
-            <div class="but2">
-              <button type="button" class="but2"><img src="/images/icon-cart.svg" alt="cart in button" class="kart">&nbsp;&nbsp;&nbsp; Add to cart</button>
+            <div class="image-container items item">
+              <img src="/images/image-product-2.jpg" alt="product2" class="products">
+            </div>
+            <div class="image-container items item">
+              <img src="/images/image-product-3.jpg" alt="product3" class="products">
+            </div>
+            <div class="image-container items item">
+              <img src="/images/image-product-4.jpg" alt="product4" class="products">
+            </div>
+    
+    
+            <div class="image_grid">
+              
+                  <img src="/images/image-product-1-thumbnail.jpg" alt="product1" class="image_lum active">
+             
+              
+                  <img src="/images/image-product-2-thumbnail.jpg" alt="product1" class="image_lum">
+             
+              
+                  <img src="/images/image-product-3-thumbnail.jpg" alt="product1" class="image_lum">
+              
+              
+                  <img src="/images/image-product-4-thumbnail.jpg" alt="product1" class="image_lum">
+              
             </div>
           </div>
+          <div class="details_cont">
+            <p class="f_text">
+              SNEAKER COMPANY
+            </p>
+            <h2 class="main_h">
+              Fall Limited Edition Sneakers
+            </h2>
+            <p class="item_desc">
+              These low-profile sneakers are your perfect casual wear companion. Featuring a 
+              durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </p>
+            <div class="amount_cont">
+              <div class="amount">
+                <h3 class="amt_1">$125.00</h3>
+                <h4 class="amt_2">50%</h4>
+              </div>
+              <h5 class="cancel">$250.00</h5>
+            </div>
+            
+            <div class="but_cont">
+              <div class="but1">
+                <span class="menusi"><img src="/images/icon-minus.svg" alt="minus"></span>
+                <span class="fig"><b></b></span>
+                <span class="plusi"><img src="/images/icon-plus.svg" alt="plus" ></span>
+              </div>
+              <div class="but2">
+                <button type="button" ><img src="/images/icon-cart.svg" alt="cart in button" class="kart">&nbsp;&nbsp;&nbsp; Add to cart</button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      
+      
     </div>
   
 

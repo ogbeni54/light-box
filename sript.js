@@ -17,10 +17,19 @@ const light_item = document.querySelectorAll('.itema')
 const light_image = document.querySelectorAll('.image_luma')
 const dark_item = document.querySelector('.lightbox_container')
 const close = document.querySelector('.close')
+const harmburger = document.querySelector('.fa-bars')
+const mobnav = document.querySelector('ul')
+const klose = document.querySelector('.klose')
 // const next = document.querySelector('.next')
 // const previous = document.querySelector('.previous')
 let count = 0;
 figure.innerHTML= 0
+
+dark_item.addEventListener('click', ()=>{
+    if (dark_item.style.display=='block') {
+        dark_item.style.display = 'none'
+    }
+})
 
 //using loop to access each of the button click event
 thumb_nail.forEach((btn, i)=>{
@@ -48,10 +57,15 @@ thumb_nail.forEach((btn, i)=>{
 image_item.forEach((stn)=>{
     stn.addEventListener('click', ()=>{
         dark_item.style.display = 'block';
+        if (dark_item.style.display=='block') {
+                document.querySelector('body').style.overflowY = 'hidden';
+                // console.log('i wont scroll');
+            }
 })
 })
 
 close.addEventListener('click', ()=>{
+    // console.log('click');
     dark_item.style.display = 'none';
 });
 
@@ -124,3 +138,14 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
     // captionText.innerHTML = dots[slideIndex-1].alt;
   }
+  harmburger.addEventListener('click', ()=>{
+    mobnav.style.display = "flex";
+    // if (mobnav.style.display == "block"){
+    //     close.addEventListener("click", ()=>{
+    //         mobnav.style.display = "none";
+    //         console.log('close clicked');
+    //     })
+  })
+  klose.addEventListener("click", ()=>{
+    mobnav.style.display = "none";  
+  })
