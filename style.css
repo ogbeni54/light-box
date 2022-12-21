@@ -92,6 +92,7 @@ ul > li > a{
     width: 120px;
     display: flex;
     align-items: center;
+    cursor: pointer;
     /* margin: auto; */
 }
 /* .contuga{
