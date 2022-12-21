@@ -332,14 +332,14 @@ ul > li > a:hover{
 }
 .cart_card > .cart_items > .cart_text > .cart_figure{
     display: flex;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 h6{
     margin: 20px 10px;
 }
 .cart_title{
-    font-size: 10px;
+    font-size: 15px;
     color: hsl(220, 14%, 75%);
 }
 .carter:hover{

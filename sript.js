@@ -90,6 +90,18 @@ but.addEventListener('click',()=>{
    
     k_circle.innerHTML = `${count}`;
     k_circle.classList.add('active');
+    card.style.display = 'flex';
+    if (count === 0) {
+        cart_items.style.display ='none';
+        empty.style.display = 'flex';
+        
+        
+    } else {
+        total.innerHTML = ` ${count}`;
+        amount.innerHTML = `&nbsp;$${125 * count}`
+        cart_items.style.display = 'flex';
+        empty.style.display = 'none';
+    }
 });
 
 cart.addEventListener('click', ()=>{
