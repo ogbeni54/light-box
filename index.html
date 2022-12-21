@@ -62,6 +62,10 @@
   </div>
   
     <div class="main">
+      <div class="btn-container1">
+        <div class="previous" onclick="plusSlides(-1)"><img src="/images/icon-previous - Copy.svg" alt="previous"></div>
+        <div class="next" onclick="plusSlides(1)"><img src="/images/icon-next.svg" alt="next"></div>
+      </div>
       <header>
         <div class="headings">
           <i class="fa-solid fa-bars"></i>
@@ -85,23 +89,29 @@
             <div class="carto">
              <img src="/images/icon-cart 2.svg" alt="cart" class="carter">
              <div class="p_circle"><span></span></div>
-             <div class="cart_card">
-              <h6>Cart</h6>
-              <hr>
-              <div class="cart_items">
-                <img src="/images/image-product-1-thumbnail.jpg" alt="image item" class="two">
-                <div class="cart_text">
-                  <span class="cart_title">Fall Limited Edition Sneakers</span>
-                  <div class="cart_figure">
-                    <span class="price">$125.00 x&nbsp;<span class="rate"></span></span>
-                    <span class="total_price"></span>
-                    <span class="real_price"></span>
-                  </div>
+             <div class="carnt">
+              <div class="cart_card">
+                <h6>Cart</h6>
+                <hr>
+                <div class="empty">
+                  <p>Your Cart is empty!</p>
                 </div>
-                <img src="/images/icon-delete.svg" alt="delete_image" class="three">
-              </div>
-              <button>Checkout</button>
+                <div class="cart_items">
+                  <img src="/images/image-product-1-thumbnail.jpg" alt="image item" class="two">
+                  <div class="cart_text">
+                    <span class="cart_title">Fall Limited Edition Sneakers</span>
+                    <div class="cart_figure">
+                      <span class="price">$125.00 x&nbsp;<span class="rate"></span></span>
+                      <span class="total_price"></span>
+                      <span class="real_price"></span>
+                    </div>
+                  </div>
+                  <img src="/images/icon-delete.svg" alt="delete_image" class="three">
+                </div>
+                <button>Checkout</button>
+               </div>
              </div>
+             
             </div>
             <div class="avatar">
               <img src="/images/image-avatar.png" alt="avatar" class="avart">
@@ -112,8 +122,12 @@
         </div>
         <hr class="hline">
       </header>
-      
+      <!-- <div class="btn-container1">
+        <div class="previous" onclick="plusSlides(-1)"><img src="/images/icon-previous - Copy.svg" alt="previous"></div>
+        
+        <div class="next" onclick="plusSlides(1)"><img src="/images/icon-next.svg" alt="next"></div> -->
         <div class="container">
+          
           <div class="image_cont">
             <div class="image-container item items active">
               <img src="/images/image-product-1.jpg" alt="product1" class="products">

@@ -8,6 +8,7 @@ const ratey = document.querySelector('.rate')
 const cart = document.querySelector('.carter') 
 const but = document.querySelector('.but2')
 const card = document.querySelector('.cart_card')
+const cart_items = document.querySelector('.cart_items')
 const checkout = document.querySelector('button')
 const total = document.querySelector('.total_price')
 const amount = document.querySelector('.real_price')
@@ -20,6 +21,7 @@ const close = document.querySelector('.close')
 const harmburger = document.querySelector('.fa-bars')
 const mobnav = document.querySelector('ul')
 const klose = document.querySelector('.klose')
+const empty = document.querySelector('.empty')
 // const next = document.querySelector('.next')
 // const previous = document.querySelector('.previous')
 let count = 0;
@@ -85,15 +87,25 @@ plusi.addEventListener('click', ()=>{
 });
 
 but.addEventListener('click',()=>{
+   
     k_circle.innerHTML = `${count}`;
     k_circle.classList.add('active');
 });
 
 cart.addEventListener('click', ()=>{
     card.style.display = 'flex';
-    total.innerHTML = ` ${count}`;
-    // let T_t = count * 125
-    amount.innerHTML = `&nbsp;$${125 * count}`
+    if (count === 0) {
+        cart_items.style.display ='none';
+        empty.style.display = 'flex';
+        
+        
+    } else {
+        total.innerHTML = ` ${count}`;
+        amount.innerHTML = `&nbsp;$${125 * count}`
+        cart_items.style.display = 'flex';
+        empty.style.display = 'none';
+    }
+    
 });
 
 checkout.addEventListener('click', ()=>{
@@ -140,6 +152,7 @@ function showSlides(n) {
   }
   harmburger.addEventListener('click', ()=>{
     mobnav.style.display = "flex";
+    klose.style.display = "block";
     // if (mobnav.style.display == "block"){
     //     close.addEventListener("click", ()=>{
     //         mobnav.style.display = "none";

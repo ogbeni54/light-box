@@ -67,7 +67,7 @@ ul > li > a{
     /* margin: 10px; */
 }
 .carto{
-    position: relative;
+    /* position: relative; */
     width: 25px;
     /* margin: 20px; */
     
@@ -275,14 +275,12 @@ button:active{
 ul > li > a:hover{
     border-bottom: 3px solid hsl(26, 100%, 55%);
     cursor: pointer;   
+    
 }
 .p_circle.active{
     position: absolute;
     display: flex;
-    right: 0px;
-    /* left: 0; */
-    bottom: 0;
-    top: 0px;
+    top: 3%;
     background-color: hsl(26, 100%, 55%);
     color: white;
     border-radius: 50%;
@@ -293,20 +291,22 @@ ul > li > a:hover{
     align-items: center;
     justify-content: center;
 }
+.carnt{
+    position: absolute;
+    right: 0px;
+    width: 30%;
+    top: 10%;
+}
 .cart_card{
     position: absolute;
-    /* right: 0px; */
-    /* bottom: 0;*/
-    top: 52px;
     display: flex;
     flex-direction: column;
-    /* box-shadow: 0px 30px 27px 5px hsl(220deg 14% 75%); */
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    /* width: 20%; */
-    /* height: 40%; */
+    width: 90%;
+    border-radius: 10px;
     justify-content: space-around;
     background-color: white;
     display: none;
@@ -349,7 +349,7 @@ h6{
     /* display: none; */
 }
 .lightbox_container{
-    position: absolute;
+    position: fixed;
     background-color: hsla(0, 0%, 0%, 0.886);
     width: 100vw;
     height: 100vh;
@@ -362,7 +362,7 @@ h6{
 }
 
 .light_box{
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
@@ -490,6 +490,28 @@ h6{
     display: none;
 }
 
+.btn-container1{
+    /* position: absolute; */
+    display: none;
+}
+.empty{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+.empty > p{
+    margin: auto;
+    padding: 40px;
+    font-size: 15px
+}
+
+@media only screen and (max-width: 1066px)  {
+    .carnt{
+        top: 11%;
+    }
+}
+
 @media only screen and (max-width: 900px)  {
     header {
         width: 90%;
@@ -512,7 +534,13 @@ h6{
         width: 25%;
     }
     header {
-        width: 96%;
+        width: 90%;
+    }
+    .nav1{
+        width: 84%;
+    }
+    .container{
+        width: 92%;
     }
 }
 
@@ -603,7 +631,18 @@ h6{
         left: 0;
         justify-content: center;
         align-items: flex-start;
+        display: none;
     } 
+    .carnt{
+        width: 100%;
+        top: 7%;
+    }
+    .cart_card{
+        width: 97%;
+        margin: 0px auto;
+        left: 0;
+        right: 0;
+    }
     
     .klose{
       
@@ -618,6 +657,15 @@ h6{
         color: black;
         margin-left: 20px;
         z-index: 999999999999999999999;
+    }
+    .btn-container1{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 30%;
+    }
+    .p_circle.active{
+        top: 1%;
     }
   
 }
@@ -635,6 +683,9 @@ h6{
     }
     .nav2{
         width: 25%;
+    }
+    .carnt{
+        top: 8%;
     }
 }
 
