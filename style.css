@@ -526,6 +526,9 @@ h6{
 } 
 
 @media only screen and (max-width: 854px)  {
+    /* .lightbox_container{
+        display: none;
+    } */
     .but2 > button{
         padding: 15px 15px;
     }
@@ -667,6 +670,7 @@ h6{
     .p_circle.active{
         top: 1%;
     }
+    
   
 }
 

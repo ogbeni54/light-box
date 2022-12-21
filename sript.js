@@ -27,11 +27,11 @@ const empty = document.querySelector('.empty')
 let count = 0;
 figure.innerHTML= 0
 
-dark_item.addEventListener('click', ()=>{
-    if (dark_item.style.display=='block') {
-        dark_item.style.display = 'none'
-    }
-})
+// dark_item.addEventListener('click', ()=>{
+//     if (dark_item.style.display=='block') {
+//         dark_item.style.display = 'none'
+//     }
+// })
 
 //using loop to access each of the button click event
 thumb_nail.forEach((btn, i)=>{
@@ -56,15 +56,22 @@ thumb_nail.forEach((btn, i)=>{
 })
 })
 
+var x = window.matchMedia("(max-width: 854px)")
 image_item.forEach((stn)=>{
     stn.addEventListener('click', ()=>{
+        if (x.matches) {
+            dark_item.style.display = 'none'
+            // console.log('clickedf');
+        } else {
         dark_item.style.display = 'block';
         if (dark_item.style.display=='block') {
                 document.querySelector('body').style.overflowY = 'hidden';
                 // console.log('i wont scroll');
             }
+        }
 })
 })
+
 
 close.addEventListener('click', ()=>{
     // console.log('click');
@@ -131,6 +138,7 @@ showSlides(slideIndex);
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
+    // console.log('clicked');
   }
   
 function currentSlide(n) {
@@ -162,6 +170,48 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
     // captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
+showSlides1(slideIndex);
+
+
+
+function plusSlides1(n) {
+    showSlides1(slideIndex += n);
+    // console.log('clicked');
+  }
+  
+function currentSlide1(n) {
+    showSlides1(slideIndex = n);
+  }
+
+function showSlides1(n) {
+    var i;
+    var slides = document.getElementsByClassName("item");
+    var dots = document.getElementsByClassName("image_lum");
+    // var captionText = document.getElementById("caption");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    //This is used to remove the active class from the large image
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    // This is used to remove the active class from the thumbnail
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    // Since our n starts from 1 upward we meed to substratct one from index for 
+    // us to access the exact element in the array
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    // captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+
+
+
   harmburger.addEventListener('click', ()=>{
     mobnav.style.display = "flex";
     klose.style.display = "block";
